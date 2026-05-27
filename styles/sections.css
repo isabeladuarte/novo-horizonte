@@ -855,7 +855,6 @@
   color: #fff;
 }
 
-/* FOOTER */
 .app-footer {
   padding: 28px;
   display: flex;
@@ -910,6 +909,14 @@
   gap: 8px;
 }
 
+.app-footer-social a {
+  text-decoration: none;
+}
+
+.app-footer-social a:visited {
+  color: dimgray;
+}
+
 .app-social-btn {
   width: 34px;
   height: 34px;
@@ -930,10 +937,6 @@
   border-color: var(--ink);
   color: var(--white);
 }
-
-/* =========================
-   RESPONSIVIDADE
-========================= */
 
 img {
   max-width: 100%;
