@@ -892,7 +892,12 @@
   gap: 18px;
 }
 
-.app-footer-links a {
+.app-footer-links p {
+  font-size: 12px;
+  color: var(--ink60);
+}
+
+/* .app-footer-links a {
   font-size: 12px;
   color: var(--ink60);
   text-decoration: none;
@@ -902,7 +907,7 @@
 
 .app-footer-links a:hover {
   color: var(--ink);
-}
+} */
 
 .app-footer-social {
   display: flex;
