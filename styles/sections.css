@@ -434,12 +434,17 @@
 }
 
 .app-gallery-placeholder {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+}
+
+.app-gallery-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .app-gallery-placeholder i {
@@ -916,6 +921,7 @@
 
 .app-footer-social a {
   text-decoration: none;
+  color: dimgray;
 }
 
 .app-footer-social a:visited {
