@@ -921,11 +921,12 @@
 
 .app-footer-social a {
   text-decoration: none;
-  color: dimgray;
+  color: inherit;
 }
 
 .app-footer-social a:visited {
-  color: dimgray;
+  color: inherit;
+  text-decoration: none;
 }
 
 .app-social-btn {
