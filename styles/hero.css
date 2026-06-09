@@ -76,6 +76,10 @@
   animation: fadeUp 0.6s 0.3s ease both;
 }
 
+.hero-btns a {
+  text-decoration: none;
+}
+
 .hero-stats {
   position: absolute;
   right: 28px;
