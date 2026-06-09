@@ -1,340 +1,409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/sections.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/logo-novo-horizonte.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <title>Novo Horizonte</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/global.css">
-  <link rel="stylesheet" href="./styles/navbar.css">
-  <link rel="stylesheet" href="./styles/hero.css">
-  <link rel="stylesheet" href="./styles/sections.css">
-  <link rel="stylesheet" href="./styles/responsive.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="shortcut icon" href="images/logo-novo-horizonte.jpeg" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <title>Novo Horizonte</title>
-</head>
+  <body>
+    <div class="app">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <strong>Novo Horizonte</strong>
+          <i class="ti ti-menu-2"></i>
+        </div>
+        <div class="navbar-links">
+          <a href="#mission">Missão</a>
+          <a href="#courses">Cursos</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#impact">Impacto</a>
+        </div>
+        <button class="navbar-cta">Quero participar →</button>
+      </nav>
 
-<body>
-  <div class="app">
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <strong>Novo Horizonte</strong>
-        <i class="ti ti-menu-2"></i>
-      </div>
-      <div class="navbar-links">
-        <a href="#mission">Missão</a>
-        <a href="#courses">Cursos</a>
-        <a href="#gallery">Galeria</a>
-        <a href="#impact">Impacto</a>
-      </div>
-      <button class="navbar-cta">Quero participar →</button>
-    </nav>
-
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <div class="section-tag">📍 Zona Leste · São Paulo</div>
-        <h1>Novos caminhos,<br>
-          <em>grandes oportunidades.</em>
-        </h1>
-        <p>Capacitando jovens da periferia através da tecnologia, educação e inovação para construir um futuro com mais oportunidades e transformação social.</p>
-        <div class="hero-btns">
-          <button class="app-btn-primary">
-            <i class="ti ti-rocket"></i> 
-            Inscreva-se grátis
-          </button>
-          <button class="app-btn-secondary">
-            <i class="ti ti-player-play"></i> 
-            Ver o projeto
-          </button>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="app-stat">
-          <span class="num">50</span>
-          <span class="lbl">jovens formados</span>
-        </div>
-        <div class="app-stat">
-          <span class="num">1</span>
-          <span class="lbl">bairros atendidos</span>
-        </div>
-        <div class="app-stat">
-          <span class="num">60%</span>
-          <span class="lbl">empregabilidade</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section id="mission" class="app-sec">
-      <div class="app-sec-label">Nossa missão</div>
-      <h2>Tecnologia como ferramenta<br>de transformação social</h2>
-      <p class="lead">Acreditamos que todo jovem, independente de onde nasceu, tem potencial para construir o futuro.
-        Oferecemos cursos gratuitos, mentoria e conexão com o mercado de trabalho.</p>
-      <div class="app-pillars">
-        <div class="app-pillar">
-          <div class="app-pillar-icon">
-            <i class="ti ti-code"></i>
-          </div>
-          <h3>Programação</h3>
-          <p>Web e fundamentos de lógica com projetos reais do dia a dia.</p>
-        </div>
-        <div class="app-pillar">
-          <div class="app-pillar-icon">
-            <i class="ti ti-palette"></i>
-          </div>
-          <h3>Design digital</h3>
-          <p>UX, UI e criação visual para quem quer expressar ideias pelo design.</p>
-        </div>
-        <div class="app-pillar">
-          <div class="app-pillar-icon">
-            <i class="ti ti-device-laptop"></i>
-          </div>
-          <h3>Infraestrutura</h3>
-          <p>Laboratório equipado com computadores e internet de qualidade.</p>
-        </div>
-        <div class="app-pillar">
-          <div class="app-pillar-icon">
-            <i class="ti ti-users"></i>
-          </div>
-          <h3>Mentoria</h3>
-          <p>Profissionais voluntários para instruir cada jovem na sua trajetória.</p>
-        </div>
-      </div>
-    </section>
-
-    <div class="app-steps-wrap">
-      <div class="app-sec" style="padding-bottom:0;">
-        <div class="app-sec-label">Como funciona</div>
-        <h2>Do cadastro ao mercado</h2>
-      </div>
-      <div class="app-steps">
-        <div class="app-step">
-          <div class="app-step-num">01</div>
-          <h3>Inscrição gratuita</h3>
-          <p>Qualquer jovem de 15 a 18 anos residente na Zona Leste pode se inscrever.</p>
-        </div>
-        <div class="app-step">
-          <div class="app-step-num">02</div>
-          <h3>Escolha o curso</h3>
-          <p>Trilhas de tecnologia com aulas presenciais e online.</p>
-        </div>
-        <div class="app-step">
-          <div class="app-step-num">03</div>
-          <h3>Aprenda na prática</h3>
-          <p>Projetos reais e portfólio construído do zero.</p>
-        </div>
-        <div class="app-step">
-          <div class="app-step-num">04</div>
-          <h3>Entre no mercado</h3>
-          <p>Conexão com empresas parceiras e oportunidades de emprego.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <section id="gallery" class="app-sec">
-      <div class="app-sec-label">O projeto em ação</div>
-      <h2>Momentos que marcam vidas</h2>
-      <p class="lead">Cada foto é uma história real. Jovens aprendendo, criando e descobrindo novas possibilidades na
-        Zona
-        Leste de SP.</p>
-      <div class="app-gallery-grid">
-        <div class="app-gallery-item featured">
-          <div class="app-gallery-bg gi-1"></div>
-          <div class="app-gallery-overlay"></div>
-          <div class="app-gallery-placeholder">
-            <img src="images/img-3.jpeg" alt="Foto da turma">
-          </div>
-          <div class="app-gallery-caption">
-            <span>Visita técnica na Dell</span>
-            <small>Granja Julieta · setembro 2025</small>
-          </div>
-        </div>
-        <div class="app-gallery-item">
-          <div class="app-gallery-bg gi-2"></div>
-          <div class="app-gallery-overlay"></div>
-          <div class="app-gallery-placeholder">
-            <img src="images/img-2.jpeg" alt="Foto da turma">
-          </div>
-          <div class="app-gallery-caption">
-            <span>Visita técnica na Multiway </span>
-            <small>Aguaí · maio 2026</small>
-          </div>
-        </div>
-        <div class="app-gallery-item">
-          <div class="app-gallery-bg gi-3"></div>
-          <div class="app-gallery-overlay"></div>
-          <div class="app-gallery-placeholder">
-            <img src="images/img-1.jpeg" alt="Foto da turma">
-          </div>
-          <div class="app-gallery-caption">
-            <span>Visita técnica na Multiway</span>
-            <small>Aguaí · maio 2026</small>
-          </div>
-        </div>
-      </div>
-      <div class="app-gallery-ig">
-        <div class="app-gallery-ig-left">
-          <i class="ti ti-brand-instagram"></i>
-          <div>
-            <span>@nov_ohorizonte2025</span>
-            <small>Acompanhe o dia a dia do projeto no Instagram</small>
-          </div>
-        </div>
-        <a href="https://www.instagram.com/nov_ohorizonte2025" target="_blank">Ver Instagram 
-          <i class="ti ti-arrow-right"></i>
-        </a>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section id="courses" class="app-sec">
-      <div class="app-sec-label">Trilhas de aprendizado</div>
-      <h2>O que você vai aprender</h2>
-      <p class="lead">Cursos pensados para quem está começando do zero. Sem pré-requisitos, só vontade de crescer.</p>
-      <div class="app-courses">
-        <div class="app-course">
-          <div class="app-course-thumb app-ct-green">
-            <i class="ti ti-code"></i>
-          </div>
-          <div class="app-course-body">
-            <div class="app-course-tag app-ctag-green">Desenvolvimento</div>
-            <h3>Web do zero</h3>
-            <p>HTML, CSS e JavaScript para criar sites e aplicações do zero.</p>
-            <div class="app-course-meta">
-              <i class="ti ti-clock"></i> 80h 
-              <i class="ti ti-certificate"></i> Certificado
-            </div>
-          </div>
-        </div>
-        <div class="app-course">
-          <div class="app-course-thumb app-ct-orange">
-            <i class="ti ti-palette"></i>
-          </div>
-          <div class="app-course-body">
-            <div class="app-course-tag app-ctag-orange">Design</div>
-            <h3>UI/UX na prática</h3>
-            <p>Figma, prototipação e design thinking com projetos reais.</p>
-            <div class="app-course-meta">
-              <i class="ti ti-clock"></i> 60h 
-              <i class="ti ti-certificate"></i> Certificado
-            </div>
-          </div>
-        </div>
-        <div class="app-course">
-          <div class="app-course-thumb app-ct-teal"><i class="ti ti-users"></i></div>
-          <div class="app-course-body">
-            <div class="app-course-tag app-ctag-teal">Mentoria</div>
-            <h3>Mentoria de carreira</h3>
-            <p>Criação de CV, simulação de entrevista e networking.</p>
-            <div class="app-course-meta">
-              <i class="ti ti-clock"></i> 100h 
-              <i class="ti ti-certificate"></i> Certificado
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="divider"></div>
-
-    <section id="impact" class="app-sec">
-      <div class="app-sec-label">Histórias reais</div>
-      <h2>Quem já transformou a vida</h2>
-      <p class="lead">Cada jovem que passa pelo Novo Horizonte carrega um novo horizonte consigo.</p>
-      <div class="app-testimonials">
-        <div class="app-testimonial">
-          <div class="app-testimonial-q">"</div>
-          <p>Depoimento
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <div class="section-tag">📍 Zona Leste · São Paulo</div>
+          <h1>
+            Novos caminhos,<br />
+            <em>grandes oportunidades.</em>
+          </h1>
+          <p>
+            Capacitando jovens da periferia através da tecnologia, educação e
+            inovação para construir um futuro com mais oportunidades e
+            transformação social.
           </p>
-          <div class="app-testimonial-author">
-            <div class="app-avatar app-av-orange">KS</div>
-            <div class="app-author"><span class="name">Kaique Santos</span>
-              <span class="role">Dev júnior · 19 anos ·
-                Itaquera
-              </span>
-            </div>
+          <div class="hero-btns">
+            <button class="app-btn-primary">
+              <i class="ti ti-rocket"></i>
+              Inscreva-se grátis
+            </button>
+            <button class="app-btn-secondary">
+              <i class="ti ti-player-play"></i>
+              Ver o projeto
+            </button>
           </div>
         </div>
-        <div class="app-testimonial">
-          <div class="app-testimonial-q">"</div>
-          <p>Depoimento</p>
-          <div class="app-testimonial-author">
-            <div class="app-avatar app-av-green">JO</div>
-            <div class="app-author">
-              <span class="name">Juliana Oliveira</span>
-              <span class="role">Designer · 21 anos · Guaianazes</span>
-            </div>
+        <div class="hero-stats">
+          <div class="app-stat">
+            <span class="num">50</span>
+            <span class="lbl">jovens formados</span>
+          </div>
+          <div class="app-stat">
+            <span class="num">1</span>
+            <span class="lbl">bairros atendidos</span>
+          </div>
+          <div class="app-stat">
+            <span class="num">60%</span>
+            <span class="lbl">empregabilidade</span>
           </div>
         </div>
-        <div class="app-testimonial">
-          <div class="app-testimonial-q">"</div>
-          <p>Depoimento</p>
-          <div class="app-testimonial-author">
-            <div class="app-avatar app-av-teal">RM</div>
-            <div class="app-author">
-              <span class="name">Rafael Mendes</span>
-              <span class="role">Estagiário TI · 17 anos · Cidade Tiradentes</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="app-cta">
-      <div class="app-sec-label" style="margin-bottom:14px;">Faça parte</div>
-      <h2>Seu novo horizonte<br>
-        <span>começa aqui.</span>
-      </h2>
-      <p>Inscrições abertas para jovens de 15 a 18 anos.<br>Gratuito, presencial e com certificado.</p>
-      <div class="app-cta-btns">
-        <button class="app-btn-primary" style="font-size:15px;padding:14px 28px;">
-          <i class="ti ti-rocket"></i> Quero me
-          inscrever
-        </button>
-        <button class="app-btn-secondary" style="font-size:15px;padding:14px 28px;">
-          <i class="ti ti-heart"></i> 
-          Quero apoiar a causa
-        </button>
-      </div>
-    </section>
+      <div class="divider"></div>
 
-    <footer class="app-footer">
-      <div class="app-footer-brand">
-        <strong>Novo Horizonte · Zona Leste, SP</strong>
+      <section id="mission" class="app-sec">
+        <div class="app-sec-label">Nossa missão</div>
+        <h2>Tecnologia como ferramenta<br />de transformação social</h2>
+        <p class="lead">
+          Acreditamos que todo jovem, independente de onde nasceu, tem potencial
+          para construir o futuro. Oferecemos cursos gratuitos, mentoria e
+          conexão com o mercado de trabalho.
+        </p>
+        <div class="app-pillars">
+          <div class="app-pillar">
+            <div class="app-pillar-icon">
+              <i class="ti ti-code"></i>
+            </div>
+            <h3>Programação</h3>
+            <p>Web e fundamentos de lógica com projetos reais do dia a dia.</p>
+          </div>
+          <div class="app-pillar">
+            <div class="app-pillar-icon">
+              <i class="ti ti-palette"></i>
+            </div>
+            <h3>Design digital</h3>
+            <p>
+              UX, UI e criação visual para quem quer expressar ideias pelo
+              design.
+            </p>
+          </div>
+          <div class="app-pillar">
+            <div class="app-pillar-icon">
+              <i class="ti ti-device-laptop"></i>
+            </div>
+            <h3>Infraestrutura</h3>
+            <p>
+              Laboratório equipado com computadores e internet de qualidade.
+            </p>
+          </div>
+          <div class="app-pillar">
+            <div class="app-pillar-icon">
+              <i class="ti ti-users"></i>
+            </div>
+            <h3>Mentoria</h3>
+            <p>
+              Profissionais voluntários para instruir cada jovem na sua
+              trajetória.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="app-steps-wrap">
+        <div class="app-sec" style="padding-bottom: 0">
+          <div class="app-sec-label">Como funciona</div>
+          <h2>Do cadastro ao mercado</h2>
+        </div>
+        <div class="app-steps">
+          <div class="app-step">
+            <div class="app-step-num">01</div>
+            <h3>Inscrição gratuita</h3>
+            <p>
+              Qualquer jovem de 15 a 18 anos residente na Zona Leste pode se
+              inscrever.
+            </p>
+          </div>
+          <div class="app-step">
+            <div class="app-step-num">02</div>
+            <h3>Escolha o curso</h3>
+            <p>Trilhas de tecnologia com aulas presenciais e online.</p>
+          </div>
+          <div class="app-step">
+            <div class="app-step-num">03</div>
+            <h3>Aprenda na prática</h3>
+            <p>Projetos reais e portfólio construído do zero.</p>
+          </div>
+          <div class="app-step">
+            <div class="app-step-num">04</div>
+            <h3>Entre no mercado</h3>
+            <p>Conexão com empresas parceiras e oportunidades de emprego.</p>
+          </div>
+        </div>
       </div>
-      <div class="app-footer-links">
-        <p>© 2026 Novo Horizonte. Todos os direitos reservados.</p>
-      </div>
-      <div class="app-footer-social">
-        <div class="app-social-btn">
-          <a href="https://www.instagram.com/nov_ohorizonte2025" target="_blank">
+
+      <div class="divider"></div>
+
+      <section id="gallery" class="app-sec">
+        <div class="app-sec-label">O projeto em ação</div>
+        <h2>Momentos que marcam vidas</h2>
+        <p class="lead">
+          Cada foto é uma história real. Jovens aprendendo, criando e
+          descobrindo novas possibilidades na Zona Leste de SP.
+        </p>
+        <div class="app-gallery-grid">
+          <div class="app-gallery-item featured">
+            <div class="app-gallery-bg gi-1"></div>
+            <div class="app-gallery-overlay"></div>
+            <div class="app-gallery-placeholder">
+              <img src="images/img-3.jpeg" alt="Foto da turma" />
+            </div>
+            <div class="app-gallery-caption">
+              <span>Visita técnica na Dell</span>
+              <small>Granja Julieta · setembro 2025</small>
+            </div>
+          </div>
+          <div class="app-gallery-item">
+            <div class="app-gallery-bg gi-2"></div>
+            <div class="app-gallery-overlay"></div>
+            <div class="app-gallery-placeholder">
+              <img src="images/img-2.jpeg" alt="Foto da turma" />
+            </div>
+            <div class="app-gallery-caption">
+              <span>Visita técnica na Multiway </span>
+              <small>Aguaí · maio 2026</small>
+            </div>
+          </div>
+          <div class="app-gallery-item">
+            <div class="app-gallery-bg gi-3"></div>
+            <div class="app-gallery-overlay"></div>
+            <div class="app-gallery-placeholder">
+              <img src="images/img-1.jpeg" alt="Foto da turma" />
+            </div>
+            <div class="app-gallery-caption">
+              <span>Visita técnica na Multiway</span>
+              <small>Aguaí · maio 2026</small>
+            </div>
+          </div>
+        </div>
+        <div class="app-gallery-ig">
+          <div class="app-gallery-ig-left">
             <i class="ti ti-brand-instagram"></i>
+            <div>
+              <span>@nov_ohorizonte2025</span>
+              <small>Acompanhe o dia a dia do projeto no Instagram</small>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/nov_ohorizonte2025" target="_blank"
+            >Ver Instagram
+            <i class="ti ti-arrow-right"></i>
           </a>
         </div>
-        <div class="app-social-btn">
-          <a href="https://wa.me/5511966623128" target="_blank">
-            <i class="ti ti-brand-whatsapp"></i>
-          </a>
-        </div>
-        <div class="app-social-btn">
-          <a href="http://www.linkedin.com/company/novo-horizonte" target="_blank">
-            <i class="ti ti-brand-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
+      </section>
 
-  </div>
-</body>
+      <div class="divider"></div>
 
+      <section id="courses" class="app-sec">
+        <div class="app-sec-label">Trilhas de aprendizado</div>
+        <h2>O que você vai aprender</h2>
+        <p class="lead">
+          Cursos pensados para quem está começando do zero. Sem pré-requisitos,
+          só vontade de crescer.
+        </p>
+        <div class="app-courses">
+          <div class="app-course">
+            <div class="app-course-thumb app-ct-green">
+              <i class="ti ti-code"></i>
+            </div>
+            <div class="app-course-body">
+              <div class="app-course-tag app-ctag-green">Desenvolvimento</div>
+              <h3>Web do zero</h3>
+              <p>
+                HTML, CSS e JavaScript para criar sites e aplicações do zero.
+              </p>
+              <div class="app-course-meta">
+                <i class="ti ti-clock"></i> 80h
+                <i class="ti ti-certificate"></i> Certificado
+              </div>
+            </div>
+          </div>
+          <div class="app-course">
+            <div class="app-course-thumb app-ct-orange">
+              <i class="ti ti-palette"></i>
+            </div>
+            <div class="app-course-body">
+              <div class="app-course-tag app-ctag-orange">Design</div>
+              <h3>UI/UX na prática</h3>
+              <p>Figma, prototipação e design thinking com projetos reais.</p>
+              <div class="app-course-meta">
+                <i class="ti ti-clock"></i> 60h
+                <i class="ti ti-certificate"></i> Certificado
+              </div>
+            </div>
+          </div>
+          <div class="app-course">
+            <div class="app-course-thumb app-ct-teal">
+              <i class="ti ti-users"></i>
+            </div>
+            <div class="app-course-body">
+              <div class="app-course-tag app-ctag-teal">Mentoria</div>
+              <h3>Mentoria de carreira</h3>
+              <p>Criação de CV, simulação de entrevista e networking.</p>
+              <div class="app-course-meta">
+                <i class="ti ti-clock"></i> 100h
+                <i class="ti ti-certificate"></i> Certificado
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="impact" class="app-sec">
+        <div class="app-sec-label">Histórias reais</div>
+        <h2>Quem já transformou a vida</h2>
+        <p class="lead">
+          Cada jovem que passa pelo Novo Horizonte carrega um novo horizonte
+          consigo.
+        </p>
+        <div class="app-testimonials">
+          <div class="app-testimonial">
+            <div class="app-testimonial-q">"</div>
+            <p>
+              Meu interesse pela área de tecnologia surgiu a partir de uma
+              experiência transformadora proporcionada pelo Novo Horizonte.
+              Conheci o projeto durante uma visita à Dell, realizada pela
+              Aparecida Rahal, e foi nesse momento que passei a enxergar novas
+              possibilidades para o meu futuro. Ao conhecer mulheres que atuam
+              na tecnologia, fui inspirada não apenas por suas conquistas
+              profissionais, mas também pela forma como se posicionavam,
+              trabalhavam e construíam suas carreiras. Ver de perto suas
+              trajetórias me mostrou que eu também poderia ocupar esses espaços
+              e alcançar objetivos que antes pareciam distantes da minha
+              realidade. Essa experiência despertou em mim um novo propósito e
+              uma nova perspectiva de vida. Desde então, decidi direcionar meus
+              estudos e minha carreira para a área de tecnologia, buscando
+              desenvolver minhas habilidades e construir um futuro alinhado aos
+              meus sonhos. Fazer parte do Novo Horizonte representa a
+              oportunidade de continuar aprendendo, crescendo e me aproximando
+              da profissional que desejo me tornar.
+            </p>
+            <div class="app-testimonial-author">
+              <div class="app-avatar app-av-orange">ME</div>
+              <div class="app-author">
+                <span class="name">Maria Eduarda</span>
+                <span class="role">Estudante de Tecnologia · Itaquera</span>
+              </div>
+            </div>
+          </div>
+          <div class="app-testimonial">
+            <div class="app-testimonial-q">"</div>
+            <p>Antes eu tinha muitas dúvidas sobre meu futuro na tecnologia. O Novo Horizonte me mostrou que eu sou capaz, ampliou minha visão através de experiências como a visita à Dell e me deu mais confiança para seguir meu sonho de me tornar uma grande desenvolvedora.</p>
+            <div class="app-testimonial-author">
+              <div class="app-avatar app-av-green">VG</div>
+              <div class="app-author">
+                <span class="name">Vitorya Grazyeli</span>
+                <span class="role">Estudante de ADS • Itaquera</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="app-testimonial">
+            <div class="app-testimonial-q">"</div>
+            <p>Depoimento</p>
+            <div class="app-testimonial-author">
+              <div class="app-avatar app-av-teal">RM</div>
+              <div class="app-author">
+                <span class="name">Rafael Mendes</span>
+                <span class="role"
+                  >Estagiário TI · 17 anos · Cidade Tiradentes</span
+                >
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="app-cta">
+        <div class="app-sec-label" style="margin-bottom: 14px">Faça parte</div>
+        <h2>
+          Seu novo horizonte<br />
+          <span>começa aqui.</span>
+        </h2>
+        <p>
+          Inscrições abertas para jovens de 15 a 18 anos.<br />Gratuito,
+          presencial e com certificado.
+        </p>
+        <div class="app-cta-btns">
+          <button
+            class="app-btn-primary"
+            style="font-size: 15px; padding: 14px 28px"
+          >
+            <i class="ti ti-rocket"></i> Quero me inscrever
+          </button>
+          <button
+            class="app-btn-secondary"
+            style="font-size: 15px; padding: 14px 28px"
+          >
+            <i class="ti ti-heart"></i>
+            Quero apoiar a causa
+          </button>
+        </div>
+      </section>
+
+      <footer class="app-footer">
+        <div class="app-footer-brand">
+          <strong>Novo Horizonte · Zona Leste, SP</strong>
+        </div>
+        <div class="app-footer-links">
+          <p>© 2026 Novo Horizonte. Todos os direitos reservados.</p>
+        </div>
+        <div class="app-footer-social">
+          <div class="app-social-btn">
+            <a
+              href="https://www.instagram.com/nov_ohorizonte2025"
+              target="_blank"
+            >
+              <i class="ti ti-brand-instagram"></i>
+            </a>
+          </div>
+          <div class="app-social-btn">
+            <a href="https://wa.me/5511966623128" target="_blank">
+              <i class="ti ti-brand-whatsapp"></i>
+            </a>
+          </div>
+          <div class="app-social-btn">
+            <a
+              href="http://www.linkedin.com/company/novo-horizonte"
+              target="_blank"
+            >
+              <i class="ti ti-brand-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
 
 <script src="./scripts/app.js"></script>
