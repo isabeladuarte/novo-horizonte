@@ -93,18 +93,26 @@
 
 .app-btn-secondary {
   background: var(--white);
+  width: 50px;
+  margin-top: 10px;
+  height: 1px;
   color: var(--ink);
   border: 1.5px solid var(--ink12);
   border-radius: 100px;
-  padding: 13px 26px;
+  padding: 15px;
   font-size: 14px;
   font-weight: 600;
   font-family: var(--font-display);
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 7px;
   transition: border-color 0.2s, background 0.2s;
+}
+
+.app-btn-secondary i {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }
 
 .app-btn-secondary:hover {
