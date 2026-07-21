@@ -91,7 +91,7 @@
   box-shadow: 6px 6px 0 var(--lime);
 }
 
-.app-btn-secondary {
+.app-btn-secondary-form {
   background: var(--white);
   width: 50px;
   margin-top: 10px;
@@ -109,13 +109,13 @@
   transition: border-color 0.2s, background 0.2s;
 }
 
-.app-btn-secondary i {
+.app-btn-secondary-form i {
   display: flex;
   align-items: center;
   font-weight: 500;
 }
 
-.app-btn-secondary:hover {
+.app-btn-secondary-form:hover {
   border-color: var(--ink);
   background: var(--bg);
 }

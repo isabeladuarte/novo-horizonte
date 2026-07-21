@@ -7,9 +7,6 @@ menu.addEventListener('click', () => {
 
 
 // // Adicionando ação ao botão para formulário
-// document.getElementById('app-btn-primary').addEventListener('click', function(event) {
-//   event.preventDefault();
-//   // Abrir o link do formulário na mesma aba
-//   window.location.href = "https://tally.so/r/GxjJle";
-//   console.log('Botão clicado!');
-// });
+document.getElementById('app-btn-primary').addEventListener('click', function(event) {
+    window.location.href = "pages/form.html";
+});
