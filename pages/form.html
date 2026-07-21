@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles/global.css" />
+		<link rel="stylesheet" href="../styles/navbar.css" />
+		<link rel="stylesheet" href="../styles/sections.css" />
+		<link rel="stylesheet" href="../styles/responsive.css" />
+		<link rel="stylesheet" href="../styles/form.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+		/>
+		<title>Formulário | Novo Horizonte</title>
+	</head>
+	<body>
+		<div class="app form-page">
+			<nav class="navbar">
+				<div class="navbar-logo">
+					<strong>Novo Horizonte</strong>
+					<i class="ti ti-menu-2"></i>
+				</div>
+				<div class="navbar-links">
+					<a href="../index.html">Início</a>
+					<a href="#cadastro">Cadastro</a>
+				</div>
+				<a class="navbar-cta" href="../index.html">Voltar →</a>
+			</nav>
+
+			<section class="app-sec form-hero">
+				<div class="section-tag">Novo Horizonte</div>
+				
+				<p class="lead">
+					Seu futuro começa aqui! Preencha o formulário abaixo para se cadastrar.
+				</p>
+			</section>
+
+			<div class="divider"></div>
+
+			<section id="cadastro" class="app-sec form-section">
+                <aside class="form-summary" aria-label="Resumo do formulário">
+                    <div class="form-summary-head">
+                        <span class="form-summary-kicker">Formulário de inscrição</span>
+                    </div>
+                    <form class="form-card" action="#" method="post">
+                        <div class="form-summary-item">
+                            <div class = "nome-field">
+                                <strong for="nome">Nome*</strong> 
+                                <input class="field"
+                                    type="text"
+                                    id="nome"
+                                    name="nome"
+                                    placeholder="Digite seu nome completo"
+                                    required
+                                />
+                            </div>
+                            <div class ="email-field">
+                                <strong for="email">Email</strong> 
+                                <input class="field"
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Digite seu email"
+                                />
+                            </div>
+                            <div class ="telefone-field">
+                                <strong for="telefone">Telefone</strong> 
+                                <input class="field"
+                                    type="text"
+                                    id="telefone"
+                                    name="telefone"
+                                    placeholder="Digite seu telefone"
+                                />
+                            </div>
+                            <div class ="idade-field">
+                                <strong for="idade">Idade</strong> 
+                                <input class="field"
+                                    type="number"
+                                    id="idade"
+                                    name="idade"
+                                />
+                            </div>
+                            <div class = "cep-field">
+                                <!-- TESTE DE CEP -->
+                                <div id="consulta-frete">
+                                    <strong for="cep">CEP</strong>
+                                    <input class="field"
+                                        type="text" id="cep"
+                                        name="cep"
+                                        placeholder="00000-000">
+                                    <button type="button" id="btnConsulta">Buscar</button>
+                                </div>
+                                <div class="resultado-frete">
+                                    <div class="endereco">
+                                    <h4>Endereço de Entrega</h4>
+                                    <p class="conteudo-api" id="logradouro"></p>
+                                    <p class="conteudo-api" id="bairro"></p>
+                                    <p class="conteudo-api" id="localidade"></p>
+                                    <p class="conteudo-api" id="uf"></p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <!-- botão para próximo campo -->
+                            <button type="button" id= "next-field" class="app-btn-secondary">
+                            <i class="ti ti-arrow-narrow-down"></i>
+                            </button>
+                        </div>
+                    
+                    
+
+                        <!-- <div class="actions">
+                            <button class="app-btn-primary" type="submit">
+                                <i class="ti ti-send"></i>
+                                Enviar cadastro
+                            </button> -->
+                            <!-- <a class="app-btn-secondary form-cancel" href="../index.html">
+                                Cancelar
+                            </a> -->
+                    </form>
+                </aside>
+				
+			</section>
+		</div>
+	</body>
+    <script src="../scripts/form.js"></script>
+    <script src="../scripts/cep.js"></script>
+</html>
