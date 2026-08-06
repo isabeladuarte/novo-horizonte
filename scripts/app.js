@@ -7,7 +7,7 @@ menu.addEventListener('click', () => {
 
 
 // // Adicionando ação ao botão para formulário
-document.getElementById('app-btn-primary').addEventListener('click', function(event) {
-  event.preventDefault();
-  window.location.href = './pages/form.html';
-});
+// document.getElementById('app-btn-primary').addEventListener('click', function(event) {
+//   event.preventDefault();
+//   window.location.href = './pages/form.html';
+// });

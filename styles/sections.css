@@ -91,6 +91,28 @@
   box-shadow: 6px 6px 0 var(--lime);
 }
 
+.app-btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--ink12);
+  border-radius: 100px;
+  padding: 13px 26px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: transform 0.15s, border-color 0.15s, background 0.15s, color 0.15s;
+}
+
+.app-btn-secondary:hover {
+  transform: translate(-1px, -1px);
+  background: rgba(14, 14, 14, 0.05);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
 .app-btn-secondary-form {
   background: var(--white);
   width: 50px;
@@ -860,7 +882,9 @@
   background: transparent;
   color: rgba(255, 255, 255, 0.65);
   border-color: rgba(255, 255, 255, 0.18);
+  border-radius: 100px;
 }
+
 
 .app-cta .app-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.08);
