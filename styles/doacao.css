@@ -1,0 +1,356 @@
+.doacao {
+    padding: 80px 20px;
+    background: #f5f8f6;
+}
+
+.doacao-container {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.doacao-tag {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #C8F135;
+}
+
+.doacao-texto h2 {
+    font-size: 42px;
+    line-height: 1.2;
+
+    margin: 15px 0;
+}
+
+.doacao-texto h2 strong {
+    display: block;
+}
+
+.doacao-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.doacao-card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.doacao-card h3 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.doacao-card > p {
+    margin-bottom: 25px;
+}
+
+
+.valores {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.valor-btn {
+    padding: 15px;
+
+    border: 2px solid #ddd;
+
+    background: white;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.valor-btn:hover {
+    transform: translateY(-2px);
+    background-color: #C8F135;
+}
+
+
+.outro-valor {
+    margin-top: 25px;
+}
+
+.outro-valor label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.input-valor {
+    display: flex;
+
+    align-items: center;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.input-valor span {
+    padding-left: 15px;
+
+    font-weight: bold;
+}
+
+.input-valor input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 18px;
+}
+
+
+.btn-doar {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 17px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.btn-doar:hover {
+    transform: translateY(-2px);
+    background-color: #C8F135;
+}
+
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.65);
+
+    z-index: 9999;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+}
+
+.modal h2 {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.modal p {
+    color: black;
+}
+
+.modal.ativo {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+}
+
+
+.fechar {
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+.valor-doacao {
+    font-size: 18px;
+}
+
+.valor-doacao strong {
+    display: block;
+
+    font-size: 30px;
+
+    margin-top: 5px;
+}
+
+
+.qr-container {
+    display: flex;
+
+    justify-content: center;
+
+    margin: 25px 0;
+}
+
+#qrcode {
+    max-width: 250px;
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+.instrucao {
+    line-height: 1.5;
+}
+
+
+.pix-copia-cola {
+    margin-top: 25px;
+
+    text-align: left;
+}
+
+.pix-copia-cola label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.pix-input {
+    display: flex;
+
+    gap: 5px;
+}
+
+.pix-input input {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+}
+
+.pix-input button {
+    padding: 12px 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+.mensagem-copiado {
+    display: none;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+.mensagem-copiado.exibir {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    .doacao-container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .doacao-texto h2 {
+        font-size: 32px;
+    }
+
+    .modal-content {
+        padding: 25px;
+    }
+
+    .fechar-modal {
+        top: 10px;
+
+        right: 15px;
+
+        font-size: 25px;
+    }
+
+    .btn-doar {
+        padding: 15px;
+    }
+
+
+}
