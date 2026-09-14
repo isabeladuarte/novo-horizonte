@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/hero.css" />
+    <link rel="stylesheet" href="../styles/sections.css" />
+    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="stylesheet" href="../styles/doacao.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/logo-novo-horizonte.jpeg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <title>Novo Horizonte</title>
+  </head>
+
+  <body>
+    <div class="app">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <strong>Novo Horizonte</strong>
+          <i class="ti ti-menu-2"></i>
+        </div>
+        <div class="navbar-links">
+          <a href="../index.html">Inicio</a>
+        </div>
+        <a class="navbar-cta" href="https://wa.me/5511966623128?text=Olá!%20Quero%20conhecer%20o%20projeto." target="_blank" rel="noopener noreferrer">Quero participar →</a>
+      </nav>
+
+    </div>
+
+    <section id="doacao" class="app-cta" class="doacao">
+
+        <div class="doacao-container">
+
+            <div class="doacao-texto">
+
+                <span class="doacao-tag">FAÇA A DIFERENÇA</span>
+
+                <h2>
+                    Ajude a transformar 
+                    <strong>o futuro de <span style="color: #C8F135;">jovens</span></strong>
+                </h2>
+
+                <p>
+                    Sua contribuição ajuda a Novo Horizonte a levar
+                    tecnologia, educação e novas oportunidades para
+                    jovens da periferia.
+                </p>
+
+                <p>
+                    Escolha um valor e faça sua contribuição através do Pix.
+                </p>
+
+            </div>
+
+
+            <div class="doacao-card">
+
+                <h3>Faça sua doação</h3>
+
+                <p>Escolha o valor que deseja doar:</p>
+
+                <div class="valores">
+
+                    <button class="valor-btn" data-valor="10">
+                        R$ 10
+                    </button>
+
+                    <button class="valor-btn" data-valor="25">
+                        R$ 25
+                    </button>
+
+                    <button class="valor-btn" data-valor="50">
+                        R$ 50
+                    </button>
+
+                    <button class="valor-btn" data-valor="100">
+                        R$ 100
+                    </button>
+
+                </div>
+
+
+                <div class="outro-valor">
+
+                    <label for="valor-personalizado">
+                        Ou digite outro valor:
+                    </label>
+
+                    <div class="input-valor">
+
+                        <span>R$</span>
+
+                        <input
+                            type="number"
+                            id="valor-personalizado"
+                            placeholder="0,00"
+                            min="1"
+                            step="0.01"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button id="gerar-pix" class="btn-doar">
+
+                     Gerar Pix
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- MODAL DO PIX -->
+
+        <div id="modal-pix" class="modal">
+
+            <div class="modal-content">
+
+                <button id="fechar-modal" class="fechar">
+                    ×
+                </button>
+
+                <h2>Obrigado pela sua contribuição!</h2>
+
+                <p class="valor-doacao">
+                    Você está doando:
+                    <strong id="valor-exibido">R$ 0,00</strong>
+                </p>
+
+
+                <div class="qr-container">
+
+                    <canvas id="qrcode"></canvas>
+
+                </div>
+
+
+                <p class="instrucao">
+
+                    Abra o aplicativo do seu banco,
+                    escolha Pix e escaneie o QR Code.
+
+                </p>
+
+
+                <div class="pix-copia-cola">
+
+                    <label>
+                        Ou copie o código Pix:
+                    </label>
+
+                    <div class="pix-input">
+
+                        <input
+                            type="text"
+                            id="pix-code"
+                            readonly
+                        >
+
+                        <button id="copiar-pix">
+                            📋 Copiar
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <p id="mensagem-copiado" class="mensagem-copiado">
+                    Código Pix copiado!
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+    </body>
+
+    <footer class="app-footer">
+        <div class="app-footer-brand">
+          <strong>Novo Horizonte · Zona Leste, SP</strong>
+          <small>CNPJ: 68.334.425/0001-70</small>
+        </div>
+        <div class="app-footer-links">
+          <p>© 2026 Novo Horizonte. Todos os direitos reservados.</p>
+        </div>
+        <div class="app-footer-social">
+          <div class="app-social-btn">
+            <a
+              href="https://www.instagram.com/novohorizonte.oficial"
+              target="_blank"
+            >
+              <i class="ti ti-brand-instagram"></i>
+            </a>
+          </div>
+          <div class="app-social-btn">
+            <a href="https://wa.me/5511966623128?text=Olá!%20Quero%20me%20inscrever." target="_blank" rel="noopener noreferrer">
+              <i class="ti ti-brand-whatsapp"></i>
+            </a>
+          </div>
+          <div class="app-social-btn">
+            <a
+              href="http://www.linkedin.com/company/novo-horizonte"
+              target="_blank"
+            >
+              <i class="ti ti-brand-linkedin"></i>
+            </a>
+          </div>
+        </div>
+    </footer>
+    <script src="../scripts/doacao.js"></script>
+
+</html>
