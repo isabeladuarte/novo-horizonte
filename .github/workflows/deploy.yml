@@ -1,0 +1,26 @@
+name: Deploy Institucional para VPS
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-vps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      # Adicione passos de build (npm run build) antes daqui, APENAS se o site for em React/Vue.
+      # Se for HTML/CSS estático direto na raiz, não precisa.
+
+      - name: Sincronizar arquivos para o servidor via SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "." # Copia tudo da raiz do repositório
+          target: "/opt/openedx/site_estatico/html"
+          strip_components: 1 # Evita criar uma subpasta no destino
